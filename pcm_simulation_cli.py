@@ -199,7 +199,8 @@ def main():
     
     plt.xlabel("Wall depth (m)")
     plt.ylabel("Temperature (°C)")
-    plt.title("Temperature Evolution Through Wall")
+    pcm_mass = params.get("pcm_mass_per_m2", 0.0)
+    plt.title(f"Temperature Evolution Through Wall\nPCM Mass: {pcm_mass:.2f} kg/m²")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()

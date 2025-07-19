@@ -199,8 +199,9 @@ def main():
     
     plt.xlabel("Wall depth (m)")
     plt.ylabel("Temperature (°C)")
-    pcm_mass = params.get("pcm_mass_per_m2", 0.0)
-    plt.title(f"Temperature Evolution Through Wall\nPCM Mass: {pcm_mass:.2f} kg/m²")
+    #pcm_mass = params.get("pcm_mass_per_m2", 0.0)
+    #amount_pcm_kg_per_m2 = pcm_thickness * pcm_rho
+    plt.title(f"Temperature Evolution Through Wall")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
